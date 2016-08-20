@@ -1,0 +1,7 @@
+province_ajax_call:
+    path:   /province_ajax_call
+    defaults: { _controller: TESTRegistrationBundle:Default:provinceAjaxCall }
+
+test_registration_homepage:
+    path:    /
+    defaults: { _controller: TESTRegistrationBundle:Default:index }

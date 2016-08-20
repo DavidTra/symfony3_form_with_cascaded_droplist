@@ -1,0 +1,30 @@
+Hello World!
+
+{# Add ajax thingie that will update the city select box #}
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<body>
+
+{{ form(form_account) }}
+
+<script>
+    $(document).  ready(function(){
+        $('#account_Province').change(function(){
+            var val = $('#account_Province').val();
+            $.ajax({
+                type: "POST",
+                url: "{{ url('province_ajax_call') }}?province_id=" + val,
+                success: function(data){
+                    $('#account_City').html('');
+                    $.each(data, function(key, value){
+                        $('#account_City').append('<option value="'+ key +'">'+ value +'</option>');
+                    })
+                }
+            })
+        })
+    })
+
+</script>
+
+</body>
+
+
