@@ -3,7 +3,7 @@ symfony3 project - form with cascaded dropdown list
 
 This is an example of how to create a dynamically modified form using FormEvents in symfony3
 
-In this example we have 3 entities (Province, City, Account) which are linked as following : "P" <1 - n> "C" <1-n "A"
+In this example we have 3 entities (Province, City, Account) which are linked as following : "P" <1 - n "C" <1-n "A"
 Unlike the example provided in the official documentation, here there is no relationship between Province and Account entites which means you can cascaded multiple choices dropdown list
 
 Some key points on which you shoudl pay attention are:
