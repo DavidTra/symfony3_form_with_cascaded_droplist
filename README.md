@@ -1,4 +1,4 @@
-# symfony3_form_with_cascaded_droplist
+# symfony3 form with cascaded dropdown list
 symfony3 project - form with cascaded dropdown list
 
 This is an example of how to create a dynamically modified form using FormEvents in symfony3
